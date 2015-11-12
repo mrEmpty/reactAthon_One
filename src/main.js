@@ -56,11 +56,14 @@ var SquareComp = React.createClass({
 //  This one is wrapped with a function becuase of the AJAX
 //  request above. It would normally start with the:
 //  ReactDOM.render( line.
+
+//	Of you are returning more than one item, wrap them in a div.
+//	To see how to pass props to a component, see the ExampleComponent below.
+
 function renderWithConditions(conditions, domElement) {
     ReactDOM.render(
-            <div>   //  Always wrap everything in a single div, it makes your life easier.
+            <div>
                 <h1>reactAthon 9000</h1>
-                //  The ExampleComponent has several properties we need to pass through.
                 <ExampleComponent location={'London'} weatherConditions={conditions[1].conditions} />
             </div>,
         domElement
