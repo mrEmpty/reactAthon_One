@@ -1,0 +1,32 @@
+<!--
+	This is all the HTML we'll use. Aside from the standard config,
+	and page title we have a single div, our rootNode. You can name
+	this anything, as long as the refence to it remains intact.
+
+	I'm also loading JQuery as it makes getting and parsing JSON simple.
+
+	Next up I'm loading in the GSAP. If you do animation on the web, use GSAP.
+	
+	And finally we load in our Javascript. The Javascript we reference is of
+	course the source that will be generated through Browserify, not the ES6
+	syntax source we'll be writing.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Test One</title>
+</head>
+<body>
+    <div id="rootNode"></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
